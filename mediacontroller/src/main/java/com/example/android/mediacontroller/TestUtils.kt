@@ -128,70 +128,72 @@ fun actionToString(action: Long?): String {
     }
 }
 
+private const val TAB = "    "
+
 fun actionsToString(actions: Long): String {
     var s = "[\n"
     if (actions and PlaybackStateCompat.ACTION_PREPARE != 0L) {
-        s += "\tACTION_PREPARE\n"
+        s += "$TAB ACTION_PREPARE\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PREPARE_FROM_MEDIA_ID != 0L) {
-        s += "\tACTION_PREPARE_FROM_MEDIA_ID\n"
+        s += "$TAB ACTION_PREPARE_FROM_MEDIA_ID\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PREPARE_FROM_SEARCH != 0L) {
-        s += "\tACTION_PREPARE_FROM_SEARCH\n"
+        s += "$TAB ACTION_PREPARE_FROM_SEARCH\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PREPARE_FROM_URI != 0L) {
-        s += "\tACTION_PREPARE_FROM_URI\n"
+        s += "$TAB ACTION_PREPARE_FROM_URI\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PLAY != 0L) {
-        s += "\tACTION_PLAY\n"
+        s += "$TAB ACTION_PLAY\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PLAY_FROM_MEDIA_ID != 0L) {
-        s += "\tACTION_PLAY_FROM_MEDIA_ID\n"
+        s += "$TAB ACTION_PLAY_FROM_MEDIA_ID\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PLAY_FROM_SEARCH != 0L) {
-        s += "\tACTION_PLAY_FROM_SEARCH\n"
+        s += "$TAB ACTION_PLAY_FROM_SEARCH\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PLAY_FROM_URI != 0L) {
-        s += "\tACTION_PLAY_FROM_URI\n"
+        s += "$TAB ACTION_PLAY_FROM_URI\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PLAY_PAUSE != 0L) {
-        s += "\tACTION_PLAY_PAUSE\n"
+        s += "$TAB ACTION_PLAY_PAUSE\n"
     }
     if (actions and PlaybackStateCompat.ACTION_PAUSE != 0L) {
-        s += "\tACTION_PAUSE\n"
+        s += "$TAB ACTION_PAUSE\n"
     }
     if (actions and PlaybackStateCompat.ACTION_STOP != 0L) {
-        s += "\tACTION_STOP\n"
+        s += "$TAB ACTION_STOP\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SEEK_TO != 0L) {
-        s += "\tACTION_SEEK_TO\n"
+        s += "$TAB ACTION_SEEK_TO\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SKIP_TO_NEXT != 0L) {
-        s += "\tACTION_SKIP_TO_NEXT\n"
+        s += "$TAB ACTION_SKIP_TO_NEXT\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS != 0L) {
-        s += "\tACTION_SKIP_TO_PREVIOUS\n"
+        s += "$TAB ACTION_SKIP_TO_PREVIOUS\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SKIP_TO_QUEUE_ITEM != 0L) {
-        s += "\tACTION_SKIP_TO_QUEUE_ITEM\n"
+        s += "$TAB ACTION_SKIP_TO_QUEUE_ITEM\n"
     }
     if (actions and PlaybackStateCompat.ACTION_FAST_FORWARD != 0L) {
-        s += "\tACTION_FAST_FORWARD\n"
+        s += "$TAB ACTION_FAST_FORWARD\n"
     }
     if (actions and PlaybackStateCompat.ACTION_REWIND != 0L) {
-        s += "\tACTION_REWIND\n"
+        s += "$TAB ACTION_REWIND\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SET_RATING != 0L) {
-        s += "\tACTION_SET_RATING\n"
+        s += "$TAB ACTION_SET_RATING\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SET_REPEAT_MODE != 0L) {
-        s += "\tACTION_SET_REPEAT_MODE\n"
+        s += "$TAB ACTION_SET_REPEAT_MODE\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SET_SHUFFLE_MODE != 0L) {
-        s += "\tACTION_SET_SHUFFLE_MODE\n"
+        s += "$TAB ACTION_SET_SHUFFLE_MODE\n"
     }
     if (actions and PlaybackStateCompat.ACTION_SET_CAPTIONING_ENABLED != 0L) {
-        s += "\tACTION_SET_CAPTIONING_ENABLED\n"
+        s += "$TAB ACTION_SET_CAPTIONING_ENABLED\n"
     }
     s += "]"
     return s
